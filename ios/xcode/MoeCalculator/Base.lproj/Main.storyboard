@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type digit Y" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DHg-FO-XqH">
-                                <rect key="frame" x="146" y="364" width="97" height="30"/>
+                                <rect key="frame" x="148" y="364" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -49,22 +49,24 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2D-Lh-hpk">
-                                <rect key="frame" x="129" y="277" width="41" height="30"/>
+                                <rect key="frame" x="154" y="274" width="24" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="buttonSumPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="ZuE-Cc-apa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fei-tW-N4C">
-                                <rect key="frame" x="191" y="277" width="55" height="30"/>
+                                <rect key="frame" x="210" y="274" width="28" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="buttonSubtractPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="dLF-3g-3z4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iH-TG-WaL">
-                                <rect key="frame" x="163.5" y="479" width="48" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="144" y="496" width="86" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -73,18 +75,18 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Afw-KI-ND9" secondAttribute="trailing" constant="219" id="7mN-el-Bc0"/>
                             <constraint firstItem="2iH-TG-WaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8W8-4C-qDB"/>
-                            <constraint firstItem="yaP-Kt-Nmh" firstAttribute="centerX" secondItem="Fei-tW-N4C" secondAttribute="centerX" constant="-22" id="9d9-BI-cmS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2iH-TG-WaL" secondAttribute="bottom" constant="167" id="BSL-wy-aEV"/>
-                            <constraint firstItem="Qer-Kw-zOX" firstAttribute="centerX" secondItem="DHg-FO-XqH" secondAttribute="centerX" constant="-60" id="Ei4-gA-h0o"/>
-                            <constraint firstItem="DHg-FO-XqH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="130" id="JpB-sT-Ycg"/>
+                            <constraint firstItem="yaP-Kt-Nmh" firstAttribute="centerX" secondItem="Fei-tW-N4C" secondAttribute="centerX" constant="-27.5" id="9d9-BI-cmS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2iH-TG-WaL" secondAttribute="bottom" constant="132.5" id="BSL-wy-aEV"/>
+                            <constraint firstItem="Qer-Kw-zOX" firstAttribute="centerX" secondItem="DHg-FO-XqH" secondAttribute="centerX" constant="-62" id="Ei4-gA-h0o"/>
+                            <constraint firstItem="DHg-FO-XqH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="JpB-sT-Ycg"/>
                             <constraint firstItem="Qer-Kw-zOX" firstAttribute="baseline" secondItem="Afw-KI-ND9" secondAttribute="baseline" constant="170" id="NmD-pD-a7k"/>
                             <constraint firstItem="J2D-Lh-hpk" firstAttribute="baseline" secondItem="Fei-tW-N4C" secondAttribute="baseline" id="RYd-R1-d1Q"/>
-                            <constraint firstItem="J2D-Lh-hpk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="113" id="SjE-zQ-ScY"/>
-                            <constraint firstItem="yaP-Kt-Nmh" firstAttribute="leading" secondItem="DHg-FO-XqH" secondAttribute="trailing" constant="-95" id="aI2-KK-GQP"/>
+                            <constraint firstItem="J2D-Lh-hpk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="138" id="SjE-zQ-ScY"/>
+                            <constraint firstItem="yaP-Kt-Nmh" firstAttribute="leading" secondItem="DHg-FO-XqH" secondAttribute="trailing" constant="-97" id="aI2-KK-GQP"/>
                             <constraint firstItem="Afw-KI-ND9" firstAttribute="centerX" secondItem="yaP-Kt-Nmh" secondAttribute="centerX" constant="-62.5" id="bPF-Ea-Xbx"/>
-                            <constraint firstItem="DHg-FO-XqH" firstAttribute="centerX" secondItem="J2D-Lh-hpk" secondAttribute="centerX" constant="45" id="c7s-zl-8uC"/>
-                            <constraint firstItem="Fei-tW-N4C" firstAttribute="leading" secondItem="J2D-Lh-hpk" secondAttribute="trailing" constant="21" id="lLd-G7-FNL"/>
-                            <constraint firstItem="J2D-Lh-hpk" firstAttribute="top" secondItem="DHg-FO-XqH" secondAttribute="bottom" constant="-117" id="rVm-9p-dY1"/>
+                            <constraint firstItem="DHg-FO-XqH" firstAttribute="centerX" secondItem="J2D-Lh-hpk" secondAttribute="centerX" constant="30.5" id="c7s-zl-8uC"/>
+                            <constraint firstItem="Fei-tW-N4C" firstAttribute="leading" secondItem="J2D-Lh-hpk" secondAttribute="trailing" constant="32" id="lLd-G7-FNL"/>
+                            <constraint firstItem="J2D-Lh-hpk" firstAttribute="top" secondItem="DHg-FO-XqH" secondAttribute="bottom" constant="-120" id="rVm-9p-dY1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yaP-Kt-Nmh" secondAttribute="trailing" constant="114" id="tZl-ct-Na4"/>
                             <constraint firstItem="Qer-Kw-zOX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="349" id="tfe-3W-dZR"/>
                             <constraint firstItem="DHg-FO-XqH" firstAttribute="baseline" secondItem="yaP-Kt-Nmh" secondAttribute="baseline" constant="170" id="tja-B1-e57"/>
