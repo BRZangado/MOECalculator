@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText number_y;
     private TextView result_field;
     private MoeCalculator calculator;
+    private boolean isSumClicked;
+    private boolean isSubClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                subtract.setBackgroundResource(R.drawable.roundedbuttonoff);
+                sum.setBackgroundResource(R.drawable.roundedbutton);
                 String x = number_x.getText().toString();
                 String y = number_y.getText().toString();
                 calculator = new MoeCalculator(x,y);
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         subtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sum.setBackgroundResource(R.drawable.roundedbuttonoff);
+                subtract.setBackgroundResource(R.drawable.roundedbutton);
                 String x = number_x.getText().toString();
                 String y = number_y.getText().toString();
                 calculator = new MoeCalculator(x,y);
