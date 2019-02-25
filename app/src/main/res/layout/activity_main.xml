@@ -74,7 +74,7 @@
         android:background="@android:color/holo_green_dark"
         android:text="SUM"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/result_field"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number1_input" />
 
@@ -89,14 +89,14 @@
         android:background="@android:color/holo_blue_dark"
         android:text="SUBTRACT"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/result_field"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toEndOf="@+id/button_sum"
         app:layout_constraintTop_toBottomOf="@+id/number2_input" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/result_field"
         android:layout_width="247dp"
         android:layout_height="95dp"
         android:layout_marginStart="8dp"
