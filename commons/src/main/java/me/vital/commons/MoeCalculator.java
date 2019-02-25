@@ -1,4 +1,4 @@
-package me.vital.moecalculator.utils;
+package me.vital.commons;
 
 public class MoeCalculator {
 

@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import me.vital.moecalculator.utils.MoeCalculator;
+import me.vital.commons.MoeCalculator;
 
 public class MainActivity extends AppCompatActivity {
 
