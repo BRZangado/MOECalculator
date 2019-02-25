@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText number_x;
     private EditText number_y;
     private TextView result_field;
-    private MoeCalculator calculator = new MoeCalculator();
+    private MoeCalculator calculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String x = number_x.getText().toString();
                 String y = number_y.getText().toString();
-                calculator.init(x,y);
-                Double result = calculator.sum_();
-                result_field.setText(Double.toString(result));
+                calculator = new MoeCalculator(x,y);
+                calculator.sum_();
+                result_field.setText(calculator.get_result());
             }
         });
 
@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String x = number_x.getText().toString();
                 String y = number_y.getText().toString();
-                calculator.init(x,y);
-                Double result = calculator.subtract();
-                result_field.setText(Double.toString(result));
+                calculator = new MoeCalculator(x,y);
+                calculator.subtract();
+                result_field.setText(calculator.get_result());
             }
         });
 

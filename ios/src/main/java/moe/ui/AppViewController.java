@@ -33,7 +33,7 @@ public class AppViewController extends UIViewController {
         super(peer);
     }
 
-    private MoeCalculator calculator = new MoeCalculator();
+    private MoeCalculator calculator;
 
     @Property
     @IBOutlet
@@ -65,9 +65,9 @@ public class AppViewController extends UIViewController {
     public void buttonSumPressed(UIButton sender) {
         String x = getNumberX().text();
         String y = getNumberY().text();
-        calculator.init(x,y);
-        String result = Double.toString(calculator.sum_());
-        getResultLabel().setText(result);
+        calculator = new MoeCalculator(x,y);
+        calculator.sum_();
+        getResultLabel().setText(calculator.get_result());
     }
 
     @IBAction
@@ -75,9 +75,9 @@ public class AppViewController extends UIViewController {
     public void buttonSubtract(UIButton sender) {
         String x = getNumberX().text();
         String y = getNumberY().text();
-        calculator.init(x,y);
-        String result = Double.toString(calculator.subtract());
-        getResultLabel().setText(result);
+        calculator = new MoeCalculator(x,y);
+        calculator.subtract();
+        getResultLabel().setText(calculator.get_result());
     }
 
 }
