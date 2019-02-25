@@ -5,6 +5,8 @@ public class MoeCalculator {
     private Double number_x;
     private Double number_y;
 
+    public MoeCalculator() {}
+
     public boolean init(String number_x, String number_y){
         try {
             this.number_y = Double.parseDouble(number_y);
